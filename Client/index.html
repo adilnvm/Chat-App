@@ -1,0 +1,42 @@
+<!-- client/index.html -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Chat Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #chat-container {
+            width: 300px;
+            margin: auto;
+            padding-top: 20px;
+        }
+        #message-box {
+            width: 100%;
+            height: 150px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        #message-input {
+            width: 80%;
+        }
+        #send-button {
+            width: 18%;
+        }
+    </style>
+</head>
+<body>
+    <div id='chat-container'>
+        <div id='message-box'></div>
+        <input type='text' id='message-input' placeholder='Type a message'>
+        <button id='send-button'>Send</button>
+    </div>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='main.js'></script>
+</body>
+</html>
+
